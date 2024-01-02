@@ -1,0 +1,80 @@
+.container{
+    height: 80vh;
+    display: flex;
+    gap: 100px;
+    padding-top: 10vh;
+    .intro{
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        .header{
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            white-space: normal;
+            h2{
+                font-size: 40px;
+                font-family: Title;
+                margin: 0px;
+                width: 100%;
+            }
+            p{
+                font-size: 16px;
+                font-family: Regular;
+            }
+        }
+        .imageContainer{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+    .double{
+        display: flex;
+        flex-flow: nowrap;
+        gap: 20px;
+        height: 100%;
+        width: 60vw;
+        flex-shrink: 0;
+        .imageContainer{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+    .description{
+        height: 100%;    
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+    .end{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        width: 60vw;
+        flex-shrink: 0;
+        padding-right: 50px;
+        .imageContainer{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            img{
+                object-fit: cover;
+            }
+            &:nth-of-type(1){
+                height: 40%;
+            }
+        }
+    }
+}

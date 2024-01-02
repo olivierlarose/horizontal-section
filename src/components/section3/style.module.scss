@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .imageContainer{
+        position: relative;
+        width: 30%;
+        height: 70vh;
+        max-height: 1200px;
+        img{
+            object-fit: cover;
+        }
+    }
+    .body{
+        width: 20%;
+        margin-left: 15%;
+        h2{
+            font-family: Title;
+            font-size: 40px;
+            margin: 0px;
+        }
+        p{
+            font-family: Regular;
+            font-size: 16px;
+        }
+    }
+}

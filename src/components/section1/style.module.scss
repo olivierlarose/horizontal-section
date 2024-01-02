@@ -1,0 +1,46 @@
+.container{
+    width: 100%;
+    .images{
+        display: flex;
+        gap: 20px;
+        .imageContainer{
+            position: relative;
+            height: 800px;
+            img{
+                object-fit: cover;
+            }
+            &:nth-of-type(1){
+                width: 30%;
+                min-width: 600px;
+            }
+            &:nth-of-type(2){
+                width: 70%;
+            }
+        }
+    }
+    .body{
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 20px;
+            h1{
+                font-size: 64px;
+                line-height: 64px;
+                font-family: Title;
+                margin: 0px;
+
+            }
+            h2{
+                font-size: 40px;
+                line-height: 40px;
+                font-family: Title;
+                margin: 0px;
+            }
+        }
+        p{
+            font-family: Title;
+            font-size: 16px;
+        }
+    }
+}
