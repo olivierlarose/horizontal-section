@@ -22,10 +22,11 @@ export default function Index() {
                 scrollTrigger: {
                     trigger: container.current,
                     start: "top top",
-                    end: "+=1500px",
+                    end: "+=2500px",
                     scrub: true,
                     pin: true,
-                    pinSpacing: true
+                    pinSpacing: true,
+                    ease: "none"
                 },
                 x: `-=${container.current.scrollWidth - window.innerWidth}`
             })
